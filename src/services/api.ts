@@ -6,5 +6,5 @@ import axios from 'axios';
 // - Teste no Emulador Android: troque 'localhost' por '10.0.2.2'
 
 export const api = axios.create({
-  baseURL: 'http://localhost:8080/api/registros',
+  baseURL: 'http://127.0.0.1:8080',
 });

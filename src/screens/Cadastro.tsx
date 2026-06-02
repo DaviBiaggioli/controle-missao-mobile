@@ -26,13 +26,13 @@ export default function Cadastro({ navigation }: Props) {
     try {
       setLoading(true);
       
-      // Envia o POST para o backend Java
-      await api.post('/', {
+      // Caminho completo no POST
+      await api.post('/api/registros', {
         nomeSensor,
         detalhesOperacionais,
         alertaCritico,
       });
-
+      
       Alert.alert('Sucesso!', 'Registro inserido no banco de dados da missão.');
       
       // Volta para a tela Home automaticamente

@@ -24,11 +24,11 @@ export default function Home({ navigation }: Props) {
     }, [])
   );
 
-  async function buscarRegistros() {
+ async function buscarRegistros() {
     try {
       setLoading(true);
-      // Faz o GET na nossa API Java
-      const response = await api.get('/');
+      
+      const response = await api.get('/api/registros');
       setRegistros(response.data);
     } catch (error) {
       console.error("Erro ao buscar dados da API:", error);
