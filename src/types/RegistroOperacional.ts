@@ -1,7 +1,12 @@
+export interface Sensor {
+  id: number;
+  nomeSensor?: string;
+}
+
 export interface RegistroOperacional {
   id?: number;
-  nomeSensor: string;
   detalhesOperacionais: string;
   alertaCritico: boolean;
   dataRegistro?: string;
+  sensor: Sensor;
 }

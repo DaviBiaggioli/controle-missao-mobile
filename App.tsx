@@ -1,12 +1,9 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-// Importaremos as telas que criaremos a seguir
 import Home from './src/screens/Home';
 import Cadastro from './src/screens/Cadastro';
 
-// Tipagem das rotas para o TypeScript não reclamar
 export type RootStackParamList = {
   Home: undefined;
   Cadastro: undefined;
@@ -20,22 +17,14 @@ export default function App() {
       <Stack.Navigator 
         initialRouteName="Home"
         screenOptions={{
-          headerStyle: { backgroundColor: '#ffffff' },
-          headerTintColor: '#000000',
-          headerTitleStyle: { fontWeight: 'bold' },
-          contentStyle: { backgroundColor: '#f8f9fa' } // Design limpo (light mode)
+          headerStyle: { backgroundColor: '#0B0F19' }, // Azul super escuro (Espaço)
+          headerTintColor: '#00F0FF', // Ciano Neon
+          headerTitleStyle: { fontWeight: 'bold', fontFamily: 'monospace' },
+          contentStyle: { backgroundColor: '#0B0F19' }
         }}
       >
-        <Stack.Screen 
-          name="Home" 
-          component={Home} 
-          options={{ title: 'Painel de Controle' }} 
-        />
-        <Stack.Screen 
-          name="Cadastro" 
-          component={Cadastro} 
-          options={{ title: 'Novo Registro' }} 
-        />
+        <Stack.Screen name="Home" component={Home} options={{ title: 'CONTROLE DE MISSÃO' }} />
+        <Stack.Screen name="Cadastro" component={Cadastro} options={{ title: 'NOVA LEITURA' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
