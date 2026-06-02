@@ -13,6 +13,6 @@ Solução Integrada Backend + Mobile desenvolvida para a disciplina de Advanced 
 * **Interface:** Design limpo, focado na usabilidade, com alertas visuais dinâmicos.
 
 ## 👥 Equipe Desenvolvedora
-* **Davi** - RM: [Seu RM]
-* **João** - RM: [RM do João]
-* **Luiz** - RM: [RM do Luiz]
+Davi da Silva Biaggioli - RM 552581
+João Gabriel De Bortoli Ribeiro - RM 554601
+Luiz Guilherme de Souza Varischi - RM 559028
